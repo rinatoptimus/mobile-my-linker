@@ -1,10 +1,13 @@
 @import '_variables';
 @import '_navigation';
+@import '_responsive-tabs';
 
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
+  background-color: $white;
 }
 .container {
+  width: 95%;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -17,7 +20,7 @@ body {
 }
 .container-image {
   margin: {
-    top: 3vw;
+    top: -2vw;
     left: 0;
     right: 0;
   }
@@ -31,7 +34,7 @@ header {
   transition: top 0.2s ease-in-out;
 }
 .nav-up {
-  top: -110px;
+  top: -120px;
 }
 .img-header {
   width: 100%;
@@ -47,7 +50,7 @@ header {
 .filter-list {
   li {
     float: left;
-    margin-right: 10px;
+    margin-right: 30px;
     list-style: none;
       .logo {
         display: block;
@@ -66,6 +69,8 @@ header {
         margin-right: 5px;
       }
       a {
+        display: inline-block;
+        padding-top: 7px;
         text-decoration: none;
         color: $nav-icon;
       }
@@ -80,23 +85,26 @@ header {
   }
 }
 .container-tags {
-  margin-top: 26vw;
+  margin-top: 20vw;
 }
 
 .tags {
-  li {
-    float: left;
-    padding-right: 7px;
-    list-style: none;
-    font-size: 13px;
-    .fa-times {
-        font-size: 10px;
-        color: $tags-icon;
-      }
-  }
+  margin-top: 20px;
+  margin-bottom: 40px;
+    li {
+      float: left;
+      padding-right: 7px;
+      list-style: none;
+      font-size: 13px;
+      .fa-times {
+          font-size: 10px;
+          color: $tags-icon;
+        }
+    }
 }
-ul {
+.appartements-list {
   li {
+    //display: inline-block;
     margin-bottom: 0;
     list-style: none;
       img {
@@ -106,6 +114,11 @@ ul {
         }
         padding: {
           right: 10px;
+        }
+      }
+      ul {
+        .appartement-address {
+          margin-top: 20px;
         }
       }
   }
