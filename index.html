@@ -1,10 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mobile My linker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="app/css/style.css">
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="top-bar">
+                <nav class="navigation active">
+                    <a href="#" class="menu-icon">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <ul class="main-navigation">
+                        <li><a href="#" class="current">One</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
+                        <li><a href="#">Four</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="twelve">
+                <ul class="filter-list">
+                    <li>
+                        <div class="logo"></div>
+                    </li>
+                    <li>
+                        <a href="#">+ Город</a>
+                    </li>
+                    <li><a href="#">+ Фильтр</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-wide">
+        <div class="row">
+            <div class="twelve">
+                <div class="img-header">
+                    <h1>Подберите жилье посуточно в Казани за 5 минут</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-wide container-divider">
+        <div class="row">
+            <div class="twelve column">
+                <ul class="tags">
+                    <li><i class="fa fa-times fa-1" aria-hidden="true"></i> One</li>
+                    <li><i class="fa fa-times fa-1" aria-hidden="true"></i> Two</li>
+                    <li><i class="fa fa-times fa-1" aria-hidden="true"></i> Three</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="twelve column">
+                <ul>
+                    <li>
+                        <img src="http://placehold.it/100x50" alt="">
+                        <ul class="appartment-description">
+                            <li>Казань, ул. Чистопольская</li>
+                            <li>1 комната</li>
+                            <li>1500 р</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x50" alt="">
+                        <ul class="appartment-description">
+                            <li>Казань, ул. Чистопольская</li>
+                            <li>1 комната</li>
+                            <li>1500 р</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x50" alt="">
+                        <ul class="appartment-description">
+                            <li>Казань, ул. Чистопольская</li>
+                            <li>1 комната</li>
+                            <li>1500 р</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x50" alt="">
+                        <ul class="appartment-description">
+                            <li>Казань, ул. Чистопольская</li>
+                            <li>1 комната</li>
+                            <li>1500 р</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x50" alt="">
+                        <ul class="appartment-description">
+                            <li>Казань, ул. Чистопольская</li>
+                            <li>1 комната</li>
+                            <li>1500 р</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x50" alt="">
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x50" alt="">
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x50" alt="">
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x50" alt="">
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x50" alt="">
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x50" alt="">
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </li>
+                    <li>
+                        <img src="http://placehold.it/100x50" alt="">
+                        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="app/js/singlenav.js"></script>
+    <script>
+        var $menuIcon = $('.menu-icon'),
+                $navigation = $('.navigation'),
+                $mainNavigation = $('.main-navigation'),
+                $navigationLink = $('.main-navigation a');
+
+        $(window).scroll(function() {
+            if(window.scrollY > window.outerHeight) {
+                $menuIcon.addClass('active');
+            } else {
+                $menuIcon.removeClass('active');
+            }
+        });
+
+        $menuIcon.click(function(e) {
+            e.preventDefault();
+
+            $navigation.toggleClass('active');
+        });
+
+        $mainNavigation.singlePageNav({
+            filter: ':not(.external)',
+            speed: 1000,
+            currentClass: 'current',
+            easing: 'swing',
+            updateHash: false,
+            beforeStart: function() {
+            },
+            onComplete: function() {
+                $navigation.removeClass('active');
+            }
+        });
+    </script>
 </body>
 </html>
