@@ -7,10 +7,10 @@
   right: 100%;
   padding: 20px;
 
-  -webkit-transition: all .15s ease-in-out;
-  -moz-transition: all .15s ease-in-out;
-  -ms-transition: all .15s ease-in-out;
-  -o-transition: all .15s ease-in-out;
+  //-webkit-transition: all .15s ease-in-out;
+  //-moz-transition: all .15s ease-in-out;
+  //-ms-transition: all .15s ease-in-out;
+  //-o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
 }
 .menu-icon {
@@ -37,8 +37,7 @@
 .navigation {
   position: fixed;
   top: 0;
-  //left: 0;
-  right: -23em;
+  right: -27em;
   bottom: 0;
   height: 100%;
   z-index: 20;
@@ -54,17 +53,9 @@
   -ms-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-
-  //@include phone-md {
-  //  right: -77vw;
-  //}
-  //@include phone {
-  //  right: -87vw;
-  //}
-  //@include phone-mini {
-  //  right: -100vw;
-  //}
-
+  @include phone {
+    //right: -27em;
+  }
 }
 
 .navigation ul {
@@ -98,4 +89,15 @@
 .navigation ul li a:hover {
   color: #222;
   background-color: white;
+}
+
+
+
+
+
+.navigation.active {
+  transform: translateX(-50px);
+}
+.navigation ul li {
+  transform: translateX(-30px);
 }
