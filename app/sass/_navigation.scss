@@ -38,7 +38,7 @@
   position: fixed;
   top: 0;
   //left: 0;
-  right: -76vw;
+  right: -23em;
   bottom: 0;
   height: 100%;
   z-index: 20;
@@ -54,6 +54,16 @@
   -ms-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+
+  //@include phone-md {
+  //  right: -77vw;
+  //}
+  //@include phone {
+  //  right: -87vw;
+  //}
+  //@include phone-mini {
+  //  right: -100vw;
+  //}
 
 }
 
