@@ -123,6 +123,94 @@ div.speech-blue:after {
     margin-top: 10px;
   }
 }
+.show-all-variants {
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: $main;
+  @include phone {
+    font-size: 18px;
+  }
+  @include phone-mini {
+    font-size: 15px;
+  }
+}
+.price-per-day {
+  font-size: 3em;
+  color: $main;
+  @include phone-lg {
+    font-size: 1.5em;
+  }
+}
+.price-digits {
+  font-size: 1em;
+  font-weight: 600;
+  color: $orange;
+}
+.price-rouble {
+  font-size: 1em;
+  color: $orange;
+}
+.date-container {
+  display: flex;
+  margin-top: 20px;
+}
+.date-inputs-flat {
+  display: flex;
+  flex-direction: column;
+}
+.collapse-date {
+  margin-left: 50px;
+  @include phone-lg {
+    margin-left: 0;
+  }
+}
+.calendar-flat {
+  width: 20%;
+  margin-top: 30px;
+}
+.input-in-date {
+  margin-bottom: 15px;
+}
+.flat-descr {
+  font-size: 2em;
+  @include phone-md {
+    font-size: 20px;
+  }
+  @include phone {
+    font-size: 15px;
+  }
+}
+.table {
+  margin-top: 15px;
+    tbody {
+      tr {
+        .flat-data-guests {
+          vertical-align: middle;
+        }
+        .flat-data {
+          border-top: none;
+          font-size: 3em;
+          @include phone-lg {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+}
+.multiply {
+  margin-top: 0;
+  @include phone-lg {
+    margin-top: 12px;
+  }
+}
+
+.guests-figure-date {
+  float: left;
+  width: 41px;
+  height: 55px;
+  background-size: 70%;
+}
 .thumbnail-btn-enhanced {
   margin-left: auto;
   display: block;
