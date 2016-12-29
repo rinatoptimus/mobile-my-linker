@@ -316,6 +316,7 @@ div.speech-blue:after {
 }
 .img-container {
   position: relative;
+  width: 250px;
 }
 .ad-picture {
   float: left;
@@ -330,7 +331,8 @@ div.speech-blue:after {
   width: 180px;
   position: absolute;
   top: 0;
-  left: 10%;
+  //left: 10%;
+  right: 0;
   padding: 5px;
   font-size: 1.3em;
   font-weight: 600;
@@ -339,16 +341,16 @@ div.speech-blue:after {
   border-radius: 12px 0 12px 0;
   border: 2px solid $white;
   @include phone-lg {
-    left: 19%;
+    //left: 19%;
   }
   @include phone-md {
-    left: 19%;
+    //left: 19%;
   }
   @include phone {
-    left: 22%;
+    //left: 22%;
   }
   @include phone-mini {
-    left: 26%;
+    //left: 26%;
   }
 }
 .ad-badge-recommend {
