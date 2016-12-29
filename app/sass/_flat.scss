@@ -314,6 +314,9 @@ div.speech-blue:after {
   font-weight: 600;
   color: $orange;
 }
+.img-container {
+  position: relative;
+}
 .ad-picture {
   float: left;
   margin-right: 20px;
@@ -322,4 +325,38 @@ div.speech-blue:after {
     float: none;
     margin-bottom: 0;
   }
+}
+.ad-badge {
+  width: 180px;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  padding: 5px;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: $white;
+  text-align: center;
+  border-radius: 12px 0 12px 0;
+  border: 2px solid $white;
+  @include phone-lg {
+    left: 19%;
+  }
+  @include phone-md {
+    left: 19%;
+  }
+  @include phone {
+    left: 22%;
+  }
+  @include phone-mini {
+    left: 26%;
+  }
+}
+.ad-badge-recommend {
+  background-color: $main;
+}
+.ad-badge-premium {
+  background-color: $badge-yellow;
+}
+.ad-badge-low-price {
+  background-color: $bright;
 }
