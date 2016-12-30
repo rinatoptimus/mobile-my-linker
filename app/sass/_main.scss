@@ -1,6 +1,21 @@
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
 }
+//button::-moz-focus-inner {
+//  border: 0;
+//}
+//button:focus {outline:none;}
+//
+//:focus {outline:none;border:0;}
+//:active {outline:none;border:0;}
+//button:active {outline:none;border:0;}
+//a, a:visited, a:focus, a:active, a:hover{
+//  outline:0 none !important;
+//}
+a, a:visited, a:focus, a:active, a:hover
+button, button:visited, button:focus, button:active, button:hover {
+  outline:0 none !important;
+}
 
 .container {
   //width: 95%;
@@ -26,7 +41,6 @@ body {
 
 header {
   position: fixed;
-  //top: 15px;
   width: 100%;
   z-index: 10;
   padding-bottom: 5px;
@@ -41,7 +55,6 @@ header {
   top: 12px;
 }
 .nav-up {
-  //top: -146px;
   top: -171px;
   @include phone-md {
     margin-top: -192px;
@@ -160,8 +173,6 @@ header {
   list-style: none;
 }
 
-
-
 // NEW STYLES
 
 ul {
@@ -189,6 +200,7 @@ ul {
   color: $light;
   @include phone-md {
     font-size: 20px;
+    height: 31px;
   }
 }
 div.speech {
@@ -509,9 +521,6 @@ footer {
   transition: opacity 0.2s ease-out;
   opacity: 0;
   background: url('../img/arrow-top.png') no-repeat;
-}
-#back-to-top:hover {
-  //background: #e9ebec;
 }
 #back-to-top.show {
   opacity: 1;

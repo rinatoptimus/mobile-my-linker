@@ -38,8 +38,6 @@ li.slick-active {
   background-color: $main;
 }
 
-
-
 // arrows
 .box {
   width: auto;
@@ -95,17 +93,21 @@ li.slick-active {
 //arrows second variant
 .arrow {
   display: block;
-  width: 30px;
-  height: 50px;
-  background-color: grey;
+  width: 45px;
+  height: 70px;
+  @include phone-xl {
+    display: none !important;
+  }
 }
 .l {
   z-index: 5;
   top: 50%;
   position: absolute;
+  background: url('../img/arrow-left.png') no-repeat;
 }
 .r {
   right: 0;
   position: absolute;
   top: 50%;
+  background: url('../img/arrow-right.png') no-repeat;
 }
