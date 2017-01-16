@@ -136,16 +136,69 @@ div.speech-blue:after {
   font-size: 3em;
   color: $main;
   @include phone-lg {
-    font-size: 1.5em;
+    font-size: 1.7em;
+  }
+  @include phone-md {
+    font-size: 1.2em;
   }
 }
+.owner-phone-number {
+  float: left;
+  max-width: 185px;
+  font-size: 30px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 8px 8px 8px 0;
+  position: relative;
+  @include phone {
+    max-width: 150px;
+  }
+  @include phone-mini {
+    float: none;
+  }
+}
+.owner-phone-number::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 56px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 204, 0, 0), $white 27%);
+}
+.show-owners-phone {
+  display: block;
+  margin-top: 18px;
+  font-size: 15px;
+
+  margin-top: 9px;
+  font-size: 25px;
+
+  color: $link;
+  text-decoration: underline;
+  @include phone-md {
+    margin-top: 18px;
+    font-size: 15px;
+  }
+  @include phone {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  @include phone-mini {
+    margin-bottom: 10px;
+    margin-top: -15px;
+  }
+}
+
 .price-digits {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 600;
   color: $orange;
 }
 .price-rouble {
-  font-size: 1em;
+  font-size: 1.5em;
+  font-weight: 600;
   color: $orange;
 }
 .date-container {
@@ -244,6 +297,9 @@ div.speech-blue:after {
     margin-top: 10px;
     margin-left: 0;
   }
+}
+.fa-alarm {
+  color: $link;
 }
 .btns-list {
   list-style: none;
@@ -362,4 +418,203 @@ div.speech-blue:after {
 }
 .ad-badge-low-price {
   background-color: $bright;
+}
+
+.date-container-guests {
+  margin-bottom: 10px;
+}
+.media-shield {
+  font-size: 70px;
+  color: $link;
+}
+.media-warranty {
+  @include phone {
+    margin: 0 auto 10px;
+  }
+}
+.media-heading-warranty {
+  color: $warranty;
+}
+
+// modal
+.modal-steps {
+  margin: 5px 10px;
+}
+.step-1 {
+  color: $warranty;
+}
+.fa-modal-close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 30px;
+  color: grey;
+  cursor: pointer;
+}
+.modal-footer-contacts {
+  border-top: transparent;
+  text-align: center;
+}
+.btn-next-step {
+  border-color: transparent;
+  color: $warranty;
+}
+.input-first-step {
+  width: 100%;
+  font-style: italic;
+  border-radius: 5px;
+  background-color: $white;
+  border-style: solid;
+  color: $grey;
+  border: 1px solid $grey;
+}
+.input-modal-phone {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.or {
+  font-style: italic;
+  color: $grey;
+}
+.modal-phone-number {
+  font-size: 23px;
+  font-weight: 600;
+  color: $orange;
+}
+.modal-require-call {
+  padding-bottom: 15px;
+}
+.btn-require-call {
+  width: 92%;
+}
+.important {
+  color: $orange;
+}
+.input-name {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.explanation {
+  margin-top: 15px;
+  color: $warranty;
+  font-size: 13px;
+}
+.modal-date-input {
+  width: 86%;
+  height: 25px;
+}
+.btn-write {
+  width: 100%;
+}
+.modal-datepicker-label {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 5px;
+  background: url('../img/calend.png') no-repeat;
+  background-size: 90%;
+}
+.modal-textarea {
+  font-style: italic;
+}
+.modal-label-checkbox {
+  font-size: 13px;
+}
+input[type="checkbox"].modal-checkbox  {
+  float: left;
+  margin-left: -16px;
+  margin-top: 20px;
+}
+.checkbox-span {
+  display: inline-block;
+  margin-top: 19px;
+}
+
+.label-emo {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 5px;
+  background-size: 100%;
+  opacity: 0.5;
+}
+.label-happy {
+  background: url(../img/happy.svg) no-repeat;
+}
+.label-normal {
+  background: url(../img/normal.svg) no-repeat;
+}
+.label-sad {
+  background: url(../img/sad.svg) no-repeat;
+}
+input[type="radio"] + .label-book .label-span-modal {
+  display: none;
+}
+input[type="radio"]:checked + .label-happy,
+input[type="radio"]:checked + .label-normal,
+input[type="radio"]:checked + .label-sad {
+  opacity: 1;
+}
+
+
+
+// guest number input
+.input-group-btn-vertical {
+  position: relative;
+  white-space: nowrap;
+  width: 2%;
+  vertical-align: bottom;
+  display: table-cell;
+}
+
+.input-group-btn-vertical > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  margin-left: -1px;
+  position: relative;
+  border-radius: 0;
+}
+
+.input-group-btn-vertical > .btn:first-child {
+  border-top-right-radius: 4px;
+}
+
+.input-group-btn-vertical > .btn:last-child {
+  margin-top: -2px;
+  border-bottom-right-radius: 4px;
+}
+
+.input-group-btn-vertical i {
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+.label-guests-number {
+  margin-right: 20px;
+  margin-top: 4px;
+  font-size: 20px;
+}
+.input-group-custom {
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.input-group .form-control-guests-number {
+  width: 15%;
+  border: none;
+  box-shadow: none;
+  font-size: 20px;
+}
+.input-group-btn-vertical > .btn-increase:first-child {
+  background-color: #efe9e9;
+  border: 1px solid #efe9e9;
+  border-top-right-radius: 0;
+}
+.input-group-btn-vertical > .btn-decrease:last-child {
+  background-color: #efe9e9;
+  border: 1px solid #efe9e9;
+  border-bottom-right-radius: 0;
 }

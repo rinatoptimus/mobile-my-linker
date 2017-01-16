@@ -199,7 +199,7 @@ input[type="radio"] + .label-book .label-span {
 label.btn span {
   font-size: 1.5em;
   @include phone {
-    font-size: 18px;
+    font-size: 16px;
   }
   @include phone-mini {
     font-size: 15px;
