@@ -202,6 +202,9 @@ ul {
     font-size: 20px;
     height: 60px;
   }
+  @include phone {
+    height: 31px;
+  }
 }
 div.speech {
   position: relative;
@@ -310,11 +313,12 @@ div.speech:after {
 
 .btn-find {
   width: 100%;
+  margin-bottom: 15px;
   border: none;
   box-shadow: none;
   background-image: none;
   border-radius: 8px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 600;
   text-shadow: none;
 }
@@ -322,6 +326,9 @@ div.speech:after {
 .container-enhanced-search {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.container-pics {
+  margin-top: 180px;
 }
 .btn-enhanced-search {
   padding-left: 0;

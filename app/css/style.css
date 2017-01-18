@@ -228,6 +228,9 @@ ul {
     .form-control-destination {
       font-size: 20px;
       height: 60px; } }
+  @media (max-width: 376px) {
+    .form-control-destination {
+      height: 31px; } }
 
 div.speech {
   position: relative;
@@ -353,19 +356,23 @@ div.speech:after {
 
 .btn-find {
   width: 100%;
+  margin-bottom: 15px;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   background-image: none;
   -webkit-border-radius: 8px;
           border-radius: 8px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 600;
   text-shadow: none; }
 
 .container-enhanced-search {
   margin-top: 10px;
   margin-bottom: 10px; }
+
+.container-pics {
+  margin-top: 180px; }
 
 .btn-enhanced-search {
   padding-left: 0;
