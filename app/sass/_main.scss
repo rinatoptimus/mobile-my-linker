@@ -47,7 +47,7 @@ header {
   background-color: $white;
   transition: top 0.2s ease-in-out;
 
-  height: 172px;
+  height: 132px;
   padding-top: 15px;
 }
 
@@ -72,12 +72,31 @@ header {
     color: $title;
   }
 }
+.container-address {
+  margin-top: 141px;
+  margin-bottom: 50px;
+}
+
+.block-tabs {
+  border-top: 2px solid $grey-dark;
+}
+.tabs-container {
+  margin-top: -52px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
 
 .filter-list {
   li {
     float: left;
-    margin-right: 40px;
+    margin-right: 48px;
     list-style: none;
+    @include phone-md {
+      margin-right: 32px;
+    }
+    @include phone {
+      //margin-right: 40px;
+    }
     .logo {
       display: block;
       width: 130px;
@@ -87,7 +106,10 @@ header {
         top: 2px;
       }
       background: url('../img/my-linker.png') no-repeat;
-      background-size: 100%;
+      background-size: 95%;
+      @include phone {
+        width: 90px;
+      }
     }
     .filter-icon {
       float: left;
@@ -97,14 +119,18 @@ header {
     }
     a {
       display: inline-block;
-      margin-top: 7px;
+      margin-top: 13px;
       text-decoration: none;
       color: $main-two;
-      font-size: 5vw;
+      font-size: 26px;
       font-family: 'Roboto', 'Arial', sans-serif;
       font-weight: 600;
       @include phone-md {
-        margin-top: 17px;
+        margin-top: 21px;
+        font-size: 16px;
+      }
+      @include phone {
+        margin-top: 10px;
       }
     }
     .mark {
@@ -122,7 +148,7 @@ header {
   }
   .pull-right {
     @include phone-lg {
-      float: left!important;
+      //float: left!important;
     }
   }
 }
@@ -208,17 +234,17 @@ ul {
 }
 div.speech {
   position: relative;
-  height: 64px;
-  width: 95%;
-  margin: 25px auto 0;
+  height: 44px;
+  width: 93%;
+  margin: 19px auto 0;
   text-align: center;
-  line-height: 100px;
+  //line-height: 100px;
   background-color: #fff;
   border: 2px solid $main;
-  border-radius: 7px;
+  border-radius: 5px;
   @include phone {
-    height: 35px;
-    line-height: 75px;
+    //height: 35px;
+    //line-height: 75px;
   }
 }
 div.speech:before {
@@ -229,7 +255,7 @@ div.speech:before {
   left: 5px;
   top: -20px;
   border: 10px solid;
-  border-color: $main transparent transparent $main;
+  border-color: transparent transparent transparent transparent;
   transform: rotate(180deg);
 }
 div.speech:after {
@@ -237,7 +263,7 @@ div.speech:after {
   position: absolute;
   width: 0;
   height: 0;
-  left: 7px;
+  left: 0;
   top: -15px;
   border: 8px solid;
   border-color: $white transparent transparent $white;
@@ -264,13 +290,13 @@ div.speech:after {
 }
 .dates-label {
   color: $main-three;
-  font-size: 41px;
+  font-size: 25px;
   font-weight: 400;
 }
 .date-inputs {
   display: flex;
   @include phone-lg {
-    flex-direction: column;
+    //flex-direction: column;
   }
 }
 .calendar {
@@ -487,7 +513,12 @@ div.speech:after {
   }
 }
 .logos-block {
+  display: flex;
+  flex-direction: column;
   max-width: 710px;
+    div {
+      margin: 0 auto 20px;
+    }
 }
 
 footer {
