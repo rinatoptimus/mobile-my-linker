@@ -197,10 +197,10 @@
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 16px 0 0 0;
+  padding: 10px 0 0 0;
 
   background: url('../img/bg-map.png') no-repeat;
-  background-position-x: 100%;
+  background-position-x: 88%;
 }
 
 .c-tabs-nav__link {
@@ -215,7 +215,7 @@
   text-align: center;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 600;
   font-size: 20px;
   text-decoration: underline;
@@ -242,7 +242,7 @@
   border-left: 2px solid $grey-dark;
   text-decoration: none;
   background-color: $white;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: $orange;

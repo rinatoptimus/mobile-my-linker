@@ -434,22 +434,24 @@ div.speech:after {
   background-color: #E0E9E6; }
 
 .ak-bars {
-  width: 161px;
-  height: 73px;
+  width: 100px;
+  height: 45px;
   float: left;
-  background: url("../img/logotypes/akb.png") no-repeat; }
+  background: url("../img/logotypes/akb.png") no-repeat;
+  background-size: cover; }
   @media (max-width: 456px) {
     .ak-bars {
       float: none;
       margin: 0 auto 10px; } }
 
 .visa {
-  width: 215px;
-  height: 68px;
+  width: 100px;
+  height: 31px;
   float: left;
   margin-left: 25px;
   margin-right: 25px;
-  background: url("../img/logotypes/visa.png") no-repeat; }
+  background: url("../img/logotypes/visa.png") no-repeat;
+  background-size: cover; }
   @media (max-width: 456px) {
     .visa {
       float: none;
@@ -468,10 +470,11 @@ div.speech:after {
       margin: 0 auto 10px; } }
 
 .mastercard {
-  width: 123px;
-  height: 76px;
+  width: 100px;
+  height: 61px;
   float: left;
-  background: url("../img/logotypes/mastercard.png") no-repeat; }
+  background: url("../img/logotypes/mastercard.png") no-repeat;
+  background-size: cover; }
   @media (max-width: 456px) {
     .mastercard {
       float: none;
@@ -501,11 +504,12 @@ div.speech:after {
       margin: 0 auto 10px; } }
 
 .yandex {
-  width: 233px;
-  height: 92px;
+  width: 100px;
+  height: 39px;
   float: left;
   margin-right: 60px;
-  background: url("../img/logotypes/yandex.png") no-repeat; }
+  background: url("../img/logotypes/yandex.png") no-repeat;
+  background-size: cover; }
   @media (max-width: 456px) {
     .yandex {
       float: none;
@@ -522,11 +526,11 @@ div.speech:after {
       margin: 0 auto 10px; } }
 
 .webmoney {
-  width: 100%;
-  height: 97px;
+  width: 100px;
+  height: 21px;
   float: left;
   background: url("../img/logotypes/web.png") no-repeat;
-  background-position: 50%; }
+  background-size: cover; }
   @media (max-width: 456px) {
     .webmoney {
       float: none;
@@ -567,8 +571,8 @@ footer {
   bottom: 15%;
   left: 40px;
   z-index: 9999;
-  width: 111px;
-  height: 111px;
+  width: 70px;
+  height: 70px;
   text-align: center;
   line-height: 30px;
   background: #f5f5f5;
@@ -581,7 +585,8 @@ footer {
   -webkit-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
   opacity: 0;
-  background: url("../img/arrow-top.png") no-repeat; }
+  background: url("../img/arrow-top.png") no-repeat;
+  background-size: cover; }
 
 #back-to-top.show {
   opacity: 1; }
@@ -589,6 +594,65 @@ footer {
 #content {
   height: 2000px; }
 
+.row-nav .btn-group {
+  position: absolute;
+  z-index: 40;
+  right: 0;
+  top: 30px;
+  width: 100%; }
+
+.row-nav .btn-group > .btn:first-child {
+  position: absolute;
+  top: -6px;
+  right: 0; }
+  @media (max-width: 376px) {
+    .row-nav .btn-group > .btn:first-child {
+      top: -18px; } }
+
+.row-nav .dropdown-menu {
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 40px;
+  background-color: #00398B; }
+
+.row-nav .fa-bars {
+  font-size: 30px;
+  font-weight: bold;
+  color: #00398B; }
+
+.row-nav .dropdown-menu > li > a {
+  font-size: 23px;
+  color: #fff; }
+
+/* ----- ЗАМЕНА ПЛЕЙСХОЛДЕРОВ НА ИЗОБРАЖЕНИЯ В ИНПУТАХ ДАТЫ РОЖДЕНИЯ (НАЧАЛО) ---- */
+.block-date-inputs input.form-control.form-control-date#input-zaezd:empty {
+  width: 120px;
+  height: 35px;
+  margin-right: 4px;
+  padding-right: 0;
+  padding-left: 2px;
+  text-indent: -9999px;
+  background-image: url("../img/zaezd.png");
+  background-position: -10% 50%;
+  background-repeat: no-repeat; }
+
+.block-date-inputs input.form-control.form-control-date#input-viezd:empty {
+  width: 120px;
+  height: 35px;
+  padding-right: 0;
+  padding-left: 2px;
+  text-indent: -9999px;
+  background-image: url("../img/viezd.png");
+  background-position: -10% 50%;
+  background-repeat: no-repeat; }
+
+.block-date-inputs input::-webkit-input-placeholder {
+  text-indent: -9999px;
+  -webkit-transition: none;
+  transition: none; }
+
+/* ----- ЗАМЕНА ПЛЕЙСХОЛДЕРОВ НА ИЗОБРАЖЕНИЯ В ИНПУТАХ ДАТЫ РОЖДЕНИЯ (КОНЕЦ) ----- */
 div.speech-blue {
   background-color: #133665;
   color: #fff; }
@@ -635,8 +699,8 @@ div.speech-blue:after {
 
 .new {
   padding-top: 11px;
-  padding-left: 19px;
-  font-family: "Roboto";
+  padding-left: 5px;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   color: #d70101; }
@@ -718,19 +782,21 @@ div.speech-blue:after {
 .person-name {
   margin-top: 0;
   list-style: none;
-  font-size: 2.6em;
+  font-size: 25px;
+  font-weight: 900;
   line-height: 6vw;
-  color: #00398B;
+  color: #133665;
   overflow: hidden; }
-  @media (max-width: 571px) {
-    .person-name {
-      font-size: 2em; } }
   @media (max-width: 456px) {
     .person-name {
-      font-size: 1em; } }
-  @media (max-width: 376px) {
-    .person-name {
-      margin-top: 1vw; } }
+      font-size: 20px; } }
+
+.owner-status {
+  font-size: 24px;
+  font-weight: 600; }
+  @media (max-width: 456px) {
+    .owner-status {
+      font-size: 20px; } }
 
 .calendar-date {
   float: left;
@@ -771,11 +837,12 @@ div.speech-blue:after {
 .show-all-variants {
   font-size: 16px;
   font-weight: 400;
+  font-weight: bold;
   text-decoration: underline;
-  color: #00398B; }
+  color: #133665; }
   @media (max-width: 376px) {
     .show-all-variants {
-      font-size: 18px; } }
+      font-size: 13px; } }
   @media (max-width: 321px) {
     .show-all-variants {
       font-size: 15px; } }
@@ -967,6 +1034,17 @@ div.speech-blue:after {
 
 .btns-list {
   list-style: none; }
+  .btns-list li button.active {
+    border-color: #FFAB1F;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: transparent; }
+    .btns-list li button.active:active {
+      background-color: transparent; }
+  .btns-list li button:focus {
+    background-color: transparent; }
+  .btns-list li button:active {
+    background-color: transparent; }
 
 .additional-info-title {
   font-size: 32px;
@@ -1124,8 +1202,14 @@ div.speech-blue:after {
   border-color: transparent;
   color: #003d69; }
 
+.modal-content {
+  width: 300px;
+  top: 5%;
+  margin: 0 auto; }
+
 .input-first-step {
   width: 100%;
+  max-width: 280px;
   font-style: italic;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -1238,10 +1322,21 @@ input[type="radio"]:checked + .label-normal,
 input[type="radio"]:checked + .label-sad {
   opacity: 1; }
 
+.modal-icon-block {
+  float: left;
+  margin-right: -30px;
+  margin-left: 40px; }
+  .modal-icon-block .fa-check-circle {
+    font-size: 50px;
+    color: #60ae63; }
+
+.modal-text-block {
+  padding-top: 16px; }
+
 .input-group-btn-vertical {
   position: relative;
   white-space: nowrap;
-  width: 2%;
+  width: 10px;
   vertical-align: bottom;
   display: table-cell; }
 
@@ -1302,6 +1397,7 @@ input[type="radio"]:checked + .label-sad {
   -webkit-border-bottom-right-radius: 0;
           border-bottom-right-radius: 0; }
 
+/* ----------------- СТИЛИ ДЛЯ СТРАНИЦЫ CITY (НАЧАЛО) ----------------- */
 .btn-find-city {
   margin-bottom: 10px;
   font-size: 3em;
@@ -1378,6 +1474,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 66px;
   margin-top: 64px; }
 
+/* ----------------- СТИЛИ ДЛЯ СТРАНИЦЫ CITY (КОНЕЦ) ----------------- */
 .header-book {
   height: 110px; }
 
@@ -2166,9 +2263,9 @@ li.slick-active {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 16px 0 0 0;
+  padding: 10px 0 0 0;
   background: url("../img/bg-map.png") no-repeat;
-  background-position-x: 100%; }
+  background-position-x: 88%; }
 
 .c-tabs-nav__link {
   margin-right: 4px;
@@ -2177,7 +2274,7 @@ li.slick-active {
   text-align: center;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 600;
   font-size: 20px;
   text-decoration: underline; }
@@ -2202,7 +2299,7 @@ li.slick-active {
   border-left: 2px solid #979797;
   text-decoration: none;
   background-color: #fff;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: #FFAB1F; }

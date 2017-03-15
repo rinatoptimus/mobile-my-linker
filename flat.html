@@ -13,19 +13,23 @@
     <link rel="stylesheet" href="app/css/style.css">
 </head>
 <body>
+
+
+
+
     <div class="container">
-        <div class="row">
-            <div class="top-bar">
-                <nav class="navigation active">
-                    <a href="#" class="menu-icon">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    <ul class="main-navigation">
-                        <li><a href="#" class="current">Создать объявление</a></li>
-                        <li><a href="#">Регистрация</a></li>
-                        <li><a href="#">Войти</a></li>
-                    </ul>
-                </nav>
+        <div class="row row-nav">
+            <div class="btn-group">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="text-center"><a href="#">Создать объявление</a></li>
+                    <li class="text-center"><a href="#">Регистрация</a></li>
+                    <li class="text-center"><a href="#">Войти</a></li>
+                    <li class="text-center" class="divider"></li>
+                    <li class="text-center"><a href="#">Ссылка</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -116,8 +120,11 @@
                                                     <p class="price-per-day">Цена за сутки: <span class="price-digits">18 000</span></p>
                                                 </div>
                                                 <div class="col-md-12 col-xs-12">
-                                                    <p class="owner-phone-number">+7 9373000000</p>
-                                                    <a class="show-owners-phone" href="#" data-toggle="modal" data-target="#show-phone-number">Показать номер</a>
+                                                    <p class="owner-phone-number">+7 917 921 34 58</p>
+                                                    <a class="show-owners-phone" href="#" data-toggle="modal" data-target="#demo-modal-1">Показать номер</a>
+
+                                                    <!-- Эта кнопка для вызова попапа бесплатных клиентов (или как там они называются) -->
+                                                    <!--<a class="show-owners-phone" href="#" data-toggle="modal" data-target="#demo-modal-2">Показать номер</a>-->
                                                 </div>
 
                                                 <div class="col-md-12 col-xs-12">
@@ -137,8 +144,8 @@
                                                                 <div class="calendar-date"></div>
                                                                 <label for="" class="dates-label">Дата:</label>
                                                                 <div class="date-inputs date-inputs-flat">
-                                                                    <input type="date" id="" class="form-control form-control-date input-in input-in-date" aria-describedby="helpBlock">
-                                                                    <input type="date" id="" class="form-control form-control-date input-in input-in-date" aria-describedby="helpBlock">
+                                                                    <input type="date" id="input-zaezd" class="form-control form-control-date input-in input-in-date" aria-describedby="helpBlock">
+                                                                    <input type="date" id="input-viezd" class="form-control form-control-date input-in input-in-date" aria-describedby="helpBlock">
                                                                 </div>
                                                             </form>
                                                         </div>
@@ -195,7 +202,7 @@
 
                                                 <h4 class="ads-alike">Похожие объявления</h4>
                                                 <ul class="btns-list">
-                                                    <li><button type="button" class="btn btn-default btn-sm btn-parameters">Пор параметрам</button></li>
+                                                    <li><button type="button" class="btn btn-default btn-sm btn-parameters active">По параметрам</button></li>
                                                     <li><button type="button" class="btn btn-default btn-sm btn-near">Рядом</button></li>
                                                     <li><button type="button" class="btn btn-default btn-sm btn-by-price">По цене</button></li>
                                                 </ul>
@@ -206,7 +213,9 @@
                             </div>
                         </div>
                         <div class="c-tab">
-                            <div class="c-tab__content">Тут будет карта</div>
+                            <div class="c-tab__content">
+                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=_jV_qCe2Lmx_s5UrREWxOd9SshNXOvTo&amp;width=450&amp;height=280&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -315,7 +324,7 @@
     </footer>
 
     <!-- ЭТО ОКНО ПОЯ-СЯ У ПЛАТНЫХ -->
-    <form action="" style="display: none;">
+    <form action="" class="modal multi-step" id="demo-modal-1">
         <div class="modal-content modal-steps text-center">
             <div class="modal-content">
                 <div class="modal-header modal-header-borderless">
@@ -354,17 +363,19 @@
                     <button type="submit" class="btn btn-primary">Отправить</button>
                 </div>
                 <div class="modal-footer modal-footer-contacts">
-                    <button type="button" class="btn btn-default step step-1 btn-next-step" data-step="1" onclick="sendEvent()">Далее <i class="fa fa-angle-right fa-2" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default step step-1 btn-next-step" data-step="1" onclick="sendEvent('#demo-modal-1', 2)">Далее <i class="fa fa-angle-right fa-2" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
     </form>
 
-    <form class="modal multi-step" id="show-phone-number" action="" method="POST">
+    <!-- ЭТО ОКНО ПОЯ-СЯ У БЕСПЛАТНЫХ -->
+    <form class="modal multi-step" id="demo-modal-2" action="" method="POST">
         <div class="modal-content modal-steps text-center">
             <div class="modal-content">
                 <div class="modal-header modal-header-borderless">
                     <h6 class="modal-title step-1" data-step="1">Чтобы открыть контакты, введите:</h6>
+                    <h4 class="modal-title step-2" data-step="2">Отлично!</h4>
                     <i class="fa fa-times fa-2 fa-modal-close" aria-hidden="true" data-dismiss="modal"></i>
                 </div>
                 <div class="border-gradient"></div>
@@ -375,11 +386,11 @@
                     <input class="text-center input-first-step" name="" type="email" placeholder="Адрес электронной почты" required>
                 </div>
                 <div class="modal-body step step-2">
-                    <p>Заявка принята</p>
-                    <button type="submit" class="btn btn-primary">Отправить</button>
+                    <div class="modal-icon-block"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+                    <div class="modal-text-block"><p>Заявка принята</p></div>
                 </div>
                 <div class="modal-footer modal-footer-contacts">
-                    <button type="button" class="btn btn-default step step-1 btn-next-step" data-step="1" onclick="sendEvent()">Далее <i class="fa fa-angle-right fa-2" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default step step-1 btn-next-step" data-step="1" onclick="sendEvent('#demo-modal-2', 2)">Далее <i class="fa fa-angle-right fa-2" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
@@ -390,6 +401,7 @@
             <div class="modal-content modal-require-call">
                 <div class="modal-header modal-header-borderless">
                     <h6 class="modal-title step-1" data-step="1">Чтобы заказать звонок, введите:</h6>
+                    <i class="fa fa-times fa-2 fa-modal-close" aria-hidden="true" data-dismiss="modal"></i>
                 </div>
                 <div class="border-gradient"></div>
                 <div class="modal-body">
@@ -407,6 +419,7 @@
             <div class="modal-content modal-require-call">
                 <div class="modal-header modal-header-borderless">
                     <h6 class="modal-title step-1" data-step="1">Чтобы написать хозяину, введите:</h6>
+                    <i class="fa fa-times fa-2 fa-modal-close" aria-hidden="true" data-dismiss="modal"></i>
                 </div>
                 <div class="border-gradient"></div>
                 <div class="modal-body">
@@ -433,24 +446,35 @@
     </form><!-- модальное окно Написать-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="app/js/singlenav.js"></script>
-    <script src="app/js/offscreen-nav.js"></script>
-
-    <script src="app/js/hide-on-scroll.js"></script>
-    <script src="app/js/jquery.responsiveTabs.js"></script>
-    <script src="app/js/responsive-tabs-init.js"></script>
-
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--<script src="app/js/singlenav.js"></script>-->
+    <!--<script src="app/js/offscreen-nav.js"></script>-->
+
+    <!-- чтобы топбар при скролле исчезал не сразу -->
+    <script src="app/js/hide-on-scroll.js"></script>
+
+    <!-- переключение табов -->
+    <!--<script src="app/js/jquery.responsiveTabs.js"></script>-->
+
+    <!-- переключение табов инициализация скрипта -->
+    <!--<script src="app/js/responsive-tabs-init.js"></script>-->
+
+    <!-- слайдер -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="app/js/slider.js"></script>
 
+    <!-- кнопка Наверх -->
     <script src="app/js/scroll-top.js"></script>
 
+    <!-- модальное окно с мультиформой -->
     <script src="app/js/multi-step-modal.js"></script>
     <script src="app/js/modal-show-number.js"></script>
 
+    <!-- инпут Гости -->
     <script src="app/js/input-guests.js"></script>
+
+    <!-- табы -->
     <script src="app/js/tabs.js"></script>
     <script>
         var myTabs = tabs({
@@ -461,5 +485,61 @@
 
         myTabs.init();
     </script>
+
+    <script>
+        (function($, undefined){
+            $("#input-zaezd").focus(function() {
+                var input = $(this);
+
+                if( input.val() == "" ) {
+                    input.css( {
+                        "text-indent": "0",
+                        "background-image": "none",
+                        "background-position": "50% 50%",
+                        "background-repeat": "no-repeat"
+                    });
+                }
+            });
+            $("#input-zaezd").blur(function() {
+                var input = $(this);
+
+                if( input.val() == "" ) {
+                    input.css( {
+                        "text-indent": "-9999px",
+                        "background-image": "url('app/img/zaezd.png')",
+                        "background-position": "50% 50%",
+                        "background-repeat": "no-repeat"
+                    } );
+                }
+            });
+
+            $("#input-viezd").focus(function() {
+                var input = $(this);
+
+                if( input.val() == "" ) {
+                    input.css( {
+                        "text-indent": "0",
+                        "background-image": "none",
+                        "background-position": "50% 50%",
+                        "background-repeat": "no-repeat"
+                    });
+                }
+            });
+            $("#input-viezd").blur(function() {
+                var input = $(this);
+
+                if( input.val() == "" ) {
+                    input.css( {
+                        "text-indent": "-9999px",
+                        "background-image": "url('app/img/viezd.png')",
+                        "background-position": "50% 50%",
+                        "background-repeat": "no-repeat"
+                    } );
+                }
+            });
+
+        })(jQuery);
+    </script>
+
 </body>
 </html>

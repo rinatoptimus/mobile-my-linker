@@ -49,8 +49,8 @@ div.speech-blue:after {
 }
 .new {
   padding-top: 11px;
-  padding-left: 19px;
-  font-family: "Roboto";
+  padding-left: 5px;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
   color: $red;
@@ -126,18 +126,26 @@ div.speech-blue:after {
 .person-name {
   margin-top: 0;
   list-style: none;
-  font-size: 2.6em;
+  font-size: 25px;
+  font-weight: 900;
   line-height: 6vw;
-  color: $main;
+  color: $main-light;
   overflow: hidden;
-  @include phone-lg {
-    font-size: 2em;
-  }
   @include phone-md {
-    font-size: 1em;
+    font-size: 20px;
   }
   @include phone {
-    margin-top: 1vw;
+    //margin-top: 17px;
+  }
+}
+.owner-status {
+  font-size: 24px;
+  font-weight: 600;
+  @include phone-md {
+    font-size: 20px;
+  }
+  @include phone {
+    //margin-top: 17px;
   }
 }
 .calendar-date {
@@ -172,10 +180,11 @@ div.speech-blue:after {
 .show-all-variants {
   font-size: 16px;
   font-weight: 400;
+  font-weight: bold;
   text-decoration: underline;
-  color: $main;
+  color: $main-light;
   @include phone {
-    font-size: 18px;
+    font-size: 13px;
   }
   @include phone-mini {
     font-size: 15px;
@@ -369,6 +378,24 @@ div.speech-blue:after {
 }
 .btns-list {
   list-style: none;
+    li {
+      button.active {
+        border-color: $orange;
+        box-shadow: none;
+        background-color: transparent;
+        &:active {
+          background-color: transparent;
+        }
+      }
+      button {
+        &:focus {
+          background-color: transparent;
+        }
+        &:active {
+          background-color: transparent;
+        }
+      }
+    }
 }
 .additional-info-title {
   font-size: 32px;
@@ -417,6 +444,7 @@ div.speech-blue:after {
     background-color: transparent;
   }
 }
+
 
 .ads-alike {
   margin-top: 30px;
@@ -533,8 +561,14 @@ div.speech-blue:after {
   border-color: transparent;
   color: $warranty;
 }
+.modal-content {
+  width: 300px;
+  top: 5%;
+  margin: 0 auto;
+}
 .input-first-step {
   width: 100%;
+  max-width: 280px;
   font-style: italic;
   border-radius: 5px;
   background-color: $white;
@@ -644,14 +678,26 @@ input[type="radio"]:checked + .label-normal,
 input[type="radio"]:checked + .label-sad {
   opacity: 1;
 }
-
+.modal-icon-block {
+  float: left;
+  margin-right: -30px;
+  margin-left: 40px;
+    .fa-check-circle {
+      font-size: 50px;
+      color: $modal-icon;
+    }
+}
+.modal-text-block {
+  //width: 190px;
+  padding-top: 16px;
+}
 
 
 // guest number input
 .input-group-btn-vertical {
   position: relative;
   white-space: nowrap;
-  width: 2%;
+  width: 10px;
   vertical-align: bottom;
   display: table-cell;
 }
