@@ -18,7 +18,7 @@
             input.css( {
                 "text-indent": "-9999px",
                 "background-image": "url('app/img/zaezd.png')",
-                "background-position": "50% 50%",
+                "background-position": "-3% 50%",
                 "background-repeat": "no-repeat"
             } );
         }

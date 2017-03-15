@@ -15,6 +15,7 @@ div.speech-blue:after {
   }
   @include phone {
     margin-top: -1px;
+    margin-bottom: 0;
   }
 }
 .menu-icon {
@@ -116,6 +117,11 @@ div.speech-blue:after {
   width: 20%;
   margin-right: 31px;
   margin-left: 15px;
+  @include phone-md {
+    float: none;
+    margin: 0 auto 15px;
+    display: block;
+  }
 }
 .thumbnail-custom {
   display: inline-flex;
@@ -220,11 +226,9 @@ div.speech-blue:after {
     font-size: 34px;
   }
   @include phone {
+    float: left;
     max-width: 150px;
     font-size: 27px;
-  }
-  @include phone-mini {
-    float: none;
   }
 }
 .owner-phone-number::after {
@@ -543,7 +547,7 @@ div.speech-blue:after {
   margin-right: 20px;
   margin-left: 20px;
   font-size: 70px;
-  color: $link;
+  color: $media-shield;
 }
 .media-warranty {
   @include phone {

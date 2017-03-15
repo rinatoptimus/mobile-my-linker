@@ -171,7 +171,6 @@ ul {
 
 div.speech {
   position: relative;
-  height: 44px;
   width: 93%;
   margin: 19px auto 0;
   text-align: center;
@@ -543,7 +542,8 @@ div.speech-blue:after {
       font-size: 15px; } }
   @media (max-width: 376px) {
     .speech-blue-text {
-      margin-top: -1px; } }
+      margin-top: -1px;
+      margin-bottom: 0; } }
 
 .menu-icon .fa-bars {
   margin-right: 5px;
@@ -637,6 +637,11 @@ div.speech-blue:after {
   width: 20%;
   margin-right: 31px;
   margin-left: 15px; }
+  @media (max-width: 456px) {
+    .thumbnail-avatar {
+      float: none;
+      margin: 0 auto 15px;
+      display: block; } }
 
 .thumbnail-custom {
   display: -webkit-inline-box;
@@ -742,11 +747,9 @@ div.speech-blue:after {
       font-size: 34px; } }
   @media (max-width: 376px) {
     .owner-phone-number {
+      float: left;
       max-width: 150px;
       font-size: 27px; } }
-  @media (max-width: 321px) {
-    .owner-phone-number {
-      float: none; } }
 
 .owner-phone-number::after {
   content: '';
@@ -1025,7 +1028,7 @@ div.speech-blue:after {
   margin-right: 20px;
   margin-left: 20px;
   font-size: 70px;
-  color: #8ABA8E; }
+  color: #3b9c2b; }
 
 @media (max-width: 376px) {
   .media-warranty {
@@ -1835,7 +1838,11 @@ li.slick-active {
   margin: 0;
   padding: 21px 0 0 0;
   background: url("../img/bg-map.png") no-repeat;
-  background-position-x: 88%; }
+  background-position-x: 100%;
+  background-position-y: 110%; }
+  @media (max-width: 456px) {
+    .c-tabs-nav {
+      padding-top: 35px; } }
 
 .c-tabs-nav__link {
   margin-right: 4px;
