@@ -1,3 +1,4 @@
+/* ----- СТИЛИ СЛАЙДЕРА КАСТОМНЫЕ (НАЧАЛО) ----- */
 .slick-prev {
   display: block;
   left: 25px;
@@ -101,7 +102,6 @@ li.slick-active {
 }
 .l {
   z-index: 5;
-  //top: 50%;
   top: 8%;
   position: absolute;
   background: url('../img/arrow-left.png') no-repeat;
@@ -109,7 +109,7 @@ li.slick-active {
 .r {
   right: 0;
   position: absolute;
-  //top: 50%;
   top: 8%;
   background: url('../img/arrow-right.png') no-repeat;
 }
+/* ----- СТИЛИ СЛАЙДЕРА КАСТОМНЫЕ (КОНЕЦ) ----- */

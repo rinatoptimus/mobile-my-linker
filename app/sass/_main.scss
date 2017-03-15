@@ -1,3 +1,4 @@
+/* ----- ГЛАВНЫЕ СТИЛИ (НАЧАЛО) ----- */
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
 }
@@ -277,12 +278,12 @@ div.speech:after {
     margin-top: 14em;
   }
 }
-.col-dates {
-  display: flex;
-}
+//.col-dates {
+//  display: flex;
+//}
 .block-date-inputs {
-  display: flex;
-  flex-direction: column;
+  //display: flex;
+  //flex-direction: column;
   width: 80%;
   @include phone-lg {
     width: 100%;
@@ -294,10 +295,9 @@ div.speech:after {
   font-weight: 400;
 }
 .date-inputs {
-  display: flex;
-  @include phone-lg {
-    //flex-direction: column;
-  }
+  //display: flex;
+  display: block;
+  overflow: hidden;
 }
 .calendar {
   display: block;
@@ -374,7 +374,6 @@ div.speech:after {
   }
 }
 
-
 .city-block {
   position: relative;
   margin-bottom: 20px;
@@ -406,7 +405,6 @@ div.speech:after {
     font-size: 20px;
   }
 }
-
 
 .logotypes {
   padding: 60px 5px;
@@ -517,11 +515,15 @@ div.speech:after {
   }
 }
 .logos-block {
-  display: flex;
-  flex-direction: column;
-  max-width: 710px;
-    div {
-      margin: 0 auto 20px;
+  list-style: none;
+  width: 105px;
+  margin: 0 auto;
+    li {
+      div {
+        width: 100px;
+        margin: 10px auto 10px;
+        background-position: center;
+      }
     }
 }
 
@@ -572,10 +574,7 @@ footer {
   height: 2000px;
 }
 
-
-
-
-
+// меню, которое выезжает при нажатии на гамбургер
 .row-nav .btn-group {
   position: absolute;
   z-index: 40;
@@ -607,34 +606,7 @@ footer {
   font-size: 23px;
   color: $white;
 }
-
-
-/* ----- ЗАМЕНА ПЛЕЙСХОЛДЕРОВ НА ИЗОБРАЖЕНИЯ В ИНПУТАХ ДАТЫ РОЖДЕНИЯ (НАЧАЛО) ---- */
-.block-date-inputs input.form-control.form-control-date#input-zaezd:empty {
-  width: 120px;
-  height: 35px;
-  margin-right: 4px;
-  padding-right: 0;
-  padding-left: 2px;
-  text-indent: -9999px;
-  background-image: url("../img/zaezd.png");
-  background-position: -10% 50%;
-  background-repeat: no-repeat;
+#input-zaezd {
+  float: left;
 }
-
-.block-date-inputs input.form-control.form-control-date#input-viezd:empty {
-  width: 120px;
-  height: 35px;
-  padding-right: 0;
-  padding-left: 2px;
-  text-indent: -9999px;
-  background-image: url("../img/viezd.png");
-  background-position: -10% 50%;
-  background-repeat: no-repeat;
-}
-
-.block-date-inputs input::-webkit-input-placeholder {
-  text-indent: -9999px;
-  transition: none;
-}
-/* ----- ЗАМЕНА ПЛЕЙСХОЛДЕРОВ НА ИЗОБРАЖЕНИЯ В ИНПУТАХ ДАТЫ РОЖДЕНИЯ (КОНЕЦ) ----- */
+/* ----- ГЛАВНЫЕ СТИЛИ (КОНЕЦ) ----- */

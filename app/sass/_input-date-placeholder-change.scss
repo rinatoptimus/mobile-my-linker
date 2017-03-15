@@ -1,0 +1,29 @@
+/* ----- ЗАМЕНА ПЛЕЙСХОЛДЕРОВ НА ИЗОБРАЖЕНИЯ В ИНПУТАХ ДАТЫ РОЖДЕНИЯ (НАЧАЛО) ---- */
+.block-date-inputs input.form-control.form-control-date#input-zaezd:empty {
+  width: 120px;
+  height: 35px;
+  margin-right: 4px;
+  padding-right: 0;
+  padding-left: 2px;
+  text-indent: -9999px;
+  background-image: url("../img/zaezd.png");
+  background-position: -10% 50%;
+  background-repeat: no-repeat;
+}
+
+.block-date-inputs input.form-control.form-control-date#input-viezd:empty {
+  width: 120px;
+  height: 35px;
+  padding-right: 0;
+  padding-left: 2px;
+  text-indent: -9999px;
+  background-image: url("../img/viezd.png");
+  background-position: -10% 50%;
+  background-repeat: no-repeat;
+}
+
+.block-date-inputs input::-webkit-input-placeholder {
+  text-indent: -9999px;
+  transition: none;
+}
+/* ----- ЗАМЕНА ПЛЕЙСХОЛДЕРОВ НА ИЗОБРАЖЕНИЯ В ИНПУТАХ ДАТЫ РОЖДЕНИЯ (КОНЕЦ) ----- */

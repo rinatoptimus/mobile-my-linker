@@ -1,3 +1,4 @@
+/* ------------- СТИЛИ СТРАНИЦЫ FLAT (НАЧАЛО) ------------- */
 div.speech-blue {
   background-color: $main-light;
   color: $white;
@@ -32,9 +33,6 @@ div.speech-blue:after {
   margin-right: 12px;
   margin-left: -10px;
   background: url('../img/location-sm.png') no-repeat;
-  @include phone {
-    //display: none;
-  }
 }
 .location-text {
   font-size: 24px;
@@ -109,11 +107,15 @@ div.speech-blue:after {
   margin-bottom: 20px;
 }
 .thumbnail-avatar {
-  width: 18%;
+  //width: 18%;
   float: left;
-  margin-right: 6vw;
+  //margin-right: 6vw;
   border:2px solid $black;
   border-radius: 7px;
+
+  width: 20%;
+  margin-right: 31px;
+  margin-left: 15px;
 }
 .thumbnail-custom {
   display: inline-flex;
@@ -134,18 +136,12 @@ div.speech-blue:after {
   @include phone-md {
     font-size: 20px;
   }
-  @include phone {
-    //margin-top: 17px;
-  }
 }
 .owner-status {
   font-size: 24px;
   font-weight: 600;
   @include phone-md {
     font-size: 20px;
-  }
-  @include phone {
-    //margin-top: 17px;
   }
 }
 .calendar-date {
@@ -158,7 +154,8 @@ div.speech-blue:after {
   background-size: 100%;
 }
 .btn-block {
-  margin-bottom: 25px;
+  width: 92%;
+  margin: 0 auto 25px;
   padding-top: 5px;
   padding-bottom: 5px;
   border: none;
@@ -166,16 +163,19 @@ div.speech-blue:after {
   font-weight: 600;
 }
 .bottom-btns-block {
-  display: flex;
-  @include phone {
-    flex-direction: column;
-  }
+  //display: flex;
+  //@include phone {
+  //  flex-direction: column;
+  //}
 }
 .btn-block+.btn-block {
   margin-top: 0;
   @include phone {
     margin-top: 10px;
   }
+}
+.li-show-all-variants {
+  margin-top: 5px;
 }
 .show-all-variants {
   font-size: 16px;
@@ -194,7 +194,10 @@ div.speech-blue:after {
   font-size: 3em;
   color: $main;
   @include phone-lg {
-    font-size: 1.7em;
+    margin-top: 5px;
+    margin-left: 19px;
+    font-size: 31px;
+    font-weight: 900;
   }
   @include phone-md {
     font-size: 1.2em;
@@ -209,8 +212,16 @@ div.speech-blue:after {
   overflow: hidden;
   padding: 8px 8px 8px 0;
   position: relative;
+
+  font-size: 44px;
+  padding: 10px 10px 10px 19px;
+  @include phone-md {
+    padding-top: 20px;
+    font-size: 34px;
+  }
   @include phone {
     max-width: 150px;
+    font-size: 27px;
   }
   @include phone-mini {
     float: none;
@@ -223,34 +234,40 @@ div.speech-blue:after {
   top: 0;
   width: 56px;
   height: 100%;
-  background: linear-gradient(to right, rgba(255, 204, 0, 0), $white 27%);
+  background: linear-gradient(to right, rgba(255, 204, 0, 0), $white 90%);
 }
 .show-owners-phone {
   display: block;
-  margin-top: 18px;
   font-size: 15px;
 
-  margin-top: 9px;
+  margin-top: 20px;
   font-size: 25px;
 
   color: $link;
   text-decoration: underline;
+
+
+
+  //width: 195px;
+  //display: block;
+  //position: absolute;
+  //top: 14px;
+  //right: -6px;
+  //font-size: 20px;
   @include phone-md {
-    margin-top: 18px;
+    right: -70px;
+    margin-top: 33px;
     font-size: 15px;
   }
   @include phone {
-    margin-top: 15px;
-    font-size: 18px;
-  }
-  @include phone-mini {
-    margin-bottom: 10px;
-    margin-top: -15px;
+    margin-top: 28px;
+    margin-bottom: 15px;
+    font-size: 13px;
   }
 }
 
 .price-digits {
-  font-size: 1.5em;
+  padding-left: 13px;
   font-weight: 600;
   color: $orange;
 }
@@ -260,14 +277,18 @@ div.speech-blue:after {
   color: $orange;
 }
 .date-container {
-  display: flex;
-  margin-top: 20px;
+  margin-top: -17px;
+  margin-bottom: 8px;
+  margin-left: 21px;
+}
+.date-container-guests {
+  margin-bottom: 10px;
 }
 .date-inputs-flat {
-  display: flex;
-  @include phone-md {
-    flex-direction: column;
-  }
+  //display: flex;
+  //@include phone-md {
+  //  flex-direction: column;
+  //}
 }
 .collapse-date {
   margin-left: 50px;
@@ -353,20 +374,18 @@ div.speech-blue:after {
     font-weight: 600;
   }
 }
+
 .btn-order-call {
+  margin-top: 0;
+  //margin-right: 0;
   background-color: $yellow;
   @include phone-md {
     font-size: 1.7em;
     font-weight: 600;
   }
-}
-.btn-order-call {
-  margin-top: 0;
-  margin-right: 0;
-  //margin-left: 10px;
   @include phone {
     margin-top: 10px;
-    margin-left: 0;
+    //margin-left: 0;
   }
 }
 .fa-alarm {
@@ -519,9 +538,6 @@ div.speech-blue:after {
   background-color: $bright;
 }
 
-.date-container-guests {
-  margin-bottom: 10px;
-}
 .media-shield {
   float: left;
   margin-right: 20px;
@@ -610,6 +626,7 @@ div.speech-blue:after {
   font-size: 13px;
 }
 .modal-date-input {
+  width: 231px;
   height: 25px;
 }
 .btn-write {
@@ -617,7 +634,7 @@ div.speech-blue:after {
   background-color: $orange-dark;
 }
 .datepicker-block {
-  display: flex;
+  display: block;
 }
 .modal-datepicker-label {
   width: 30px;
@@ -729,14 +746,17 @@ input[type="radio"]:checked + .label-sad {
 }
 
 .label-guests-number {
+  float: left;
+  margin-top: -4px;
   margin-right: 20px;
-  margin-top: 4px;
-  font-size: 20px;
+  font-size: 24px;
+  color: $guests-label;
 }
 .input-group-custom {
-  display: flex;
+  display: block;
   margin-right: 10px;
   margin-bottom: 10px;
+  margin-left: 21px;
 }
 .input-group .form-control-guests-number {
   width: 15%;
@@ -754,3 +774,4 @@ input[type="radio"]:checked + .label-sad {
   border: 1px solid #efe9e9;
   border-bottom-right-radius: 0;
 }
+/* ------------- СТИЛИ СТРАНИЦЫ FLAT (КОНЕЦ) ------------- */

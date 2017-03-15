@@ -1,15 +1,16 @@
+/* ----- СТИЛИ СТРАНИЦЫ BOOK (НАЧАЛО) ----- */
 .header-book {
   height: 110px;
 }
 .row-date {
   margin-bottom: 2em;
 }
-.media-book {
-  @include phone-md {
-    display: flex;
-    flex-direction: column;
-  }
-}
+//.media-book {
+//  @include phone-md {
+//    display: flex;
+//    flex-direction: column;
+//  }
+//}
 .breadcrumb-container {
   margin-top: 8em;
     .breadcrumb {
@@ -155,16 +156,12 @@ input[type="radio"]:checked + .label-book span {
   transition: background-color 0.1s linear;
 }
 .container-radio {
-  display: flex;
-  justify-content: space-around;
   margin-top: 3em;
 }
 .block-radio {
-  display:flex;
-  flex-direction:column;
+  margin-bottom: 25px;
   @include phone-lg {
     display: block;
-    float: left;
   }
 }
 .block-radio-sms {
@@ -173,8 +170,7 @@ input[type="radio"]:checked + .label-book span {
   }
 }
 .label-book {
-  display: flex;
-  flex-direction: column-reverse;
+  display: block;
 }
 input[type="radio"] + .label-book .label-span {
   margin: 90px auto 0;
@@ -255,12 +251,12 @@ label.btn input[type="checkbox"] ~ i.fa.fa-square-o {
 .btn:active {
   box-shadow: none;
 }
-.checkbox-book label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 0;
-}
+//.checkbox-book label {
+//  display: flex;
+//  flex-direction: row;
+//  align-items: center;
+//  padding-left: 0;
+//}
 
 .under-label-text {
   font-size: 1.5em;
@@ -280,3 +276,4 @@ label.btn input[type="checkbox"] ~ i.fa.fa-square-o {
   font-weight: 600;
   background-color: $main;
 }
+/* ----- СТИЛИ СТРАНИЦЫ BOOK (КОНЕЦ) ----- */
