@@ -980,6 +980,7 @@ div.speech-blue:after {
       font-size: 1em; } }
 
 .ad-price {
+  margin-bottom: 10px;
   font-size: 29px;
   font-weight: 600;
   color: #FFAB1F; }
