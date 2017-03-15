@@ -489,7 +489,7 @@ div.speech-blue:after {
 .ad-container {
   clear: both;
   @include phone-md {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 }
 .ad-city, .ad-flats {
@@ -507,6 +507,7 @@ div.speech-blue:after {
   position: relative;
   width: 200px;
   @include phone-md {
+    width: 100%;
     margin: 0 auto;
   }
 }

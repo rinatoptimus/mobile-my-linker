@@ -971,7 +971,7 @@ div.speech-blue:after {
   clear: both; }
   @media (max-width: 456px) {
     .ad-container {
-      margin-bottom: 10px; } }
+      margin-bottom: 25px; } }
 
 .ad-city, .ad-flats {
   font-size: 16px; }
@@ -989,6 +989,7 @@ div.speech-blue:after {
   width: 200px; }
   @media (max-width: 456px) {
     .img-container {
+      width: 100%;
       margin: 0 auto; } }
 
 .ad-picture {
