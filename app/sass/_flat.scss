@@ -59,6 +59,13 @@ div.speech-blue:after {
     font-size: 13px;
   }
 }
+.new-show {
+  display: inline;
+}
+.new-hide {
+  display: none;
+}
+
 .location-street {
   line-height: 2;
 }
@@ -105,7 +112,7 @@ div.speech-blue:after {
   padding-right: 10px;
 }
 .col-person {
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
 }
 .thumbnail-avatar {
   //width: 18%;
@@ -140,6 +147,7 @@ div.speech-blue:after {
   color: $main-light;
   overflow: hidden;
   @include phone-md {
+    padding-left: 15px;
     font-size: 20px;
   }
 }
@@ -200,7 +208,7 @@ div.speech-blue:after {
   font-size: 3em;
   color: $main;
   @include phone-lg {
-    margin-top: 5px;
+    margin-top: 20px;
     margin-left: 19px;
     font-size: 31px;
     font-weight: 900;
@@ -211,7 +219,7 @@ div.speech-blue:after {
 }
 .owner-phone-number {
   float: left;
-  max-width: 185px;
+  max-width: 240px;
   font-size: 30px;
 
   white-space: nowrap;
@@ -222,12 +230,13 @@ div.speech-blue:after {
   font-size: 44px;
   padding: 10px 10px 10px 19px;
   @include phone-md {
+    max-width: 170px;
     padding-top: 20px;
     font-size: 34px;
   }
   @include phone {
     float: left;
-    max-width: 150px;
+    max-width: 135px;
     font-size: 27px;
   }
 }
@@ -242,10 +251,8 @@ div.speech-blue:after {
 }
 .show-owners-phone {
   display: block;
-  font-size: 15px;
-
-  margin-top: 20px;
-  font-size: 25px;
+  margin-top: 28px;
+  font-size: 17px;
 
   color: $link;
   text-decoration: underline;
@@ -779,5 +786,14 @@ input[type="radio"]:checked + .label-sad {
   background-color: #efe9e9;
   border: 1px solid #efe9e9;
   border-bottom-right-radius: 0;
+}
+
+.wrapper-owner {
+  margin-top: -27px;
+  margin-left: -4px;
+  margin-right: -4px;
+  padding: 20px 8px 10px;
+  border-radius: 8px 8px 0 0;
+  background-color: $bg-warranty;
 }
 /* ------------- СТИЛИ СТРАНИЦЫ FLAT (КОНЕЦ) ------------- */

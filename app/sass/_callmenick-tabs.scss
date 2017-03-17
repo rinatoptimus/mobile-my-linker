@@ -5,14 +5,21 @@
   list-style: none;
   margin: 0;
   padding: 21px 0 0 0;
-
-  background: url('../img/bg-map.png') no-repeat;
-  background-position-x: 100%;
-  background-position-y: 110%;
   @include phone-md {
     padding-top: 35px;
   }
 }
+
+// для смены фона таба "Показать на карте" при переключении табов
+.bg-show {
+  background: url('../img/bg-map.png') no-repeat;
+  background-position-x: 100%;
+  background-position-y: 110%;
+}
+.bg-hide {
+  background: none;
+}
+
 
 .c-tabs-nav__link {
   margin-right: 4px;

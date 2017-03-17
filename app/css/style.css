@@ -335,92 +335,96 @@ div.speech:after {
   background-color: #E0E9E6; }
 
 .ak-bars {
-  width: 100px;
   height: 45px;
   float: left;
-  background: url("../img/logotypes/akb.png") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background: url("../img/logotypes2/akb.png") no-repeat;
+  width: 100px; }
   @media (max-width: 456px) {
     .ak-bars {
       float: none;
       margin: 0 auto 10px; } }
 
 .visa {
-  width: 100px;
-  height: 31px;
   float: left;
   margin-left: 25px;
   margin-right: 25px;
-  background: url("../img/logotypes/visa.png") no-repeat;
-  background-size: cover; }
+  height: 41px;
+  background-size: contain;
+  background: url("../img/logotypes2/visa.png") no-repeat;
+  width: 100px; }
   @media (max-width: 456px) {
     .visa {
       float: none;
       margin: 0 auto 10px; } }
 
 .alpha {
-  width: 60px;
-  height: 94px;
   float: left;
   margin-left: 25px;
   margin-right: 35px;
-  background: url("../img/logotypes/a.png") no-repeat; }
+  height: 45px;
+  background-size: contain;
+  background: url("../img/logotypes2/a.png") no-repeat;
+  width: 100px; }
   @media (max-width: 456px) {
     .alpha {
       float: none;
       margin: 0 auto 10px; } }
 
 .mastercard {
-  width: 100px;
-  height: 61px;
   float: left;
-  background: url("../img/logotypes/mastercard.png") no-repeat;
-  background-size: cover; }
+  height: 46px;
+  background-size: contain;
+  background: url("../img/logotypes2/mastercard.png") no-repeat;
+  width: 100px; }
   @media (max-width: 456px) {
     .mastercard {
       float: none;
       margin: 0 auto 10px; } }
 
 .psb {
-  width: 71px;
-  height: 71px;
   float: left;
   margin-left: 45px;
   margin-right: 50px;
-  background: url("../img/logotypes/psb.png") no-repeat; }
+  height: 46px;
+  background-size: contain;
+  background: url("../img/logotypes2/psb.png") no-repeat;
+  width: 100px; }
   @media (max-width: 456px) {
     .psb {
       float: none;
       margin: 0 auto 10px; } }
 
 .sber {
-  width: 96px;
-  height: 91px;
   float: left;
   margin-right: 20px;
-  background: url("../img/logotypes/sber.png") no-repeat; }
+  height: 46px;
+  background-size: contain;
+  background: url("../img/logotypes2/sber.png") no-repeat;
+  width: 100px; }
   @media (max-width: 456px) {
     .sber {
       float: none;
       margin: 0 auto 10px; } }
 
 .yandex {
-  width: 100px;
-  height: 39px;
   float: left;
   margin-right: 60px;
-  background: url("../img/logotypes/yandex.png") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 46px;
+  background: url("../img/logotypes2/yandex.png") no-repeat;
+  width: 100px; }
   @media (max-width: 456px) {
     .yandex {
       float: none;
       margin: 0 auto 10px; } }
 
 .kiwi {
-  width: 75px;
-  height: 79px;
   float: left;
-  background: url("../img/logotypes/kiwi.png") no-repeat; }
+  height: 46px;
+  background-size: contain;
+  background: url("../img/logotypes2/kiwi.png") no-repeat;
+  width: 100px; }
   @media (max-width: 456px) {
     .kiwi {
       float: none;
@@ -428,10 +432,10 @@ div.speech:after {
 
 .webmoney {
   width: 100px;
-  height: 21px;
   float: left;
-  background: url("../img/logotypes/web.png") no-repeat;
-  background-size: cover; }
+  height: 46px;
+  background-size: contain;
+  background: url("../img/logotypes2/web.png") no-repeat; }
   @media (max-width: 456px) {
     .webmoney {
       float: none;
@@ -440,12 +444,19 @@ div.speech:after {
 
 .logos-block {
   list-style: none;
-  width: 105px;
-  margin: 0 auto; }
-  .logos-block li div {
-    width: 100px;
-    margin: 10px auto 10px;
-    background-position: center; }
+  margin: 0 auto;
+  padding-left: 35px; }
+  @media (max-width: 456px) {
+    .logos-block {
+      padding-left: 10px; } }
+  .logos-block li {
+    float: left; }
+    @media (max-width: 456px) {
+      .logos-block li {
+        float: none; } }
+    .logos-block li div {
+      margin: 10px auto 10px;
+      background-position: center; }
 
 footer {
   padding-top: 50px;
@@ -584,6 +595,12 @@ div.speech-blue:after {
       padding-left: 0;
       font-size: 13px; } }
 
+.new-show {
+  display: inline; }
+
+.new-hide {
+  display: none; }
+
 .location-street {
   line-height: 2; }
 
@@ -626,9 +643,6 @@ div.speech-blue:after {
   padding-left: 10px;
   padding-right: 10px; }
 
-.col-person {
-  margin-bottom: 20px; }
-
 .thumbnail-avatar {
   float: left;
   border: 2px solid #000;
@@ -669,6 +683,7 @@ div.speech-blue:after {
   overflow: hidden; }
   @media (max-width: 456px) {
     .person-name {
+      padding-left: 15px;
       font-size: 20px; } }
 
 .owner-status {
@@ -723,7 +738,7 @@ div.speech-blue:after {
   color: #00398B; }
   @media (max-width: 571px) {
     .price-per-day {
-      margin-top: 5px;
+      margin-top: 20px;
       margin-left: 19px;
       font-size: 31px;
       font-weight: 900; } }
@@ -733,7 +748,7 @@ div.speech-blue:after {
 
 .owner-phone-number {
   float: left;
-  max-width: 185px;
+  max-width: 240px;
   font-size: 30px;
   white-space: nowrap;
   overflow: hidden;
@@ -743,12 +758,13 @@ div.speech-blue:after {
   padding: 10px 10px 10px 19px; }
   @media (max-width: 456px) {
     .owner-phone-number {
+      max-width: 170px;
       padding-top: 20px;
       font-size: 34px; } }
   @media (max-width: 376px) {
     .owner-phone-number {
       float: left;
-      max-width: 150px;
+      max-width: 135px;
       font-size: 27px; } }
 
 .owner-phone-number::after {
@@ -764,9 +780,8 @@ div.speech-blue:after {
 
 .show-owners-phone {
   display: block;
-  font-size: 15px;
-  margin-top: 20px;
-  font-size: 25px;
+  margin-top: 28px;
+  font-size: 17px;
   color: #8ABA8E;
   text-decoration: underline; }
   @media (max-width: 456px) {
@@ -1253,6 +1268,15 @@ input[type="radio"]:checked + .label-sad {
   border: 1px solid #efe9e9;
   -webkit-border-bottom-right-radius: 0;
           border-bottom-right-radius: 0; }
+
+.wrapper-owner {
+  margin-top: -27px;
+  margin-left: -4px;
+  margin-right: -4px;
+  padding: 20px 8px 10px;
+  -webkit-border-radius: 8px 8px 0 0;
+          border-radius: 8px 8px 0 0;
+  background-color: #ededed; }
 
 /* ------------- СТИЛИ СТРАНИЦЫ FLAT (КОНЕЦ) ------------- */
 /* ----------------- СТИЛИ ДЛЯ СТРАНИЦЫ CITY (НАЧАЛО) ----------------- */
@@ -1838,13 +1862,18 @@ li.slick-active {
   display: block;
   list-style: none;
   margin: 0;
-  padding: 21px 0 0 0;
-  background: url("../img/bg-map.png") no-repeat;
-  background-position-x: 100%;
-  background-position-y: 110%; }
+  padding: 21px 0 0 0; }
   @media (max-width: 456px) {
     .c-tabs-nav {
       padding-top: 35px; } }
+
+.bg-show {
+  background: url("../img/bg-map.png") no-repeat;
+  background-position-x: 100%;
+  background-position-y: 110%; }
+
+.bg-hide {
+  background: none; }
 
 .c-tabs-nav__link {
   margin-right: 4px;

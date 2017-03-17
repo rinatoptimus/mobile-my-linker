@@ -411,92 +411,135 @@ div.speech:after {
   background-color: $bg;
 }
 .ak-bars {
-  width: 100px;
+  //width: 100px;
   height: 45px;
   float: left;
-  background: url('../img/logotypes/akb.png') no-repeat;
+  //background: url('../img/logotypes/akb.png') no-repeat;
   background-size: cover;
+
+  background: url('../img/logotypes2/akb.png') no-repeat;
+  width: 100px;
   @include phone-md {
     float: none;
     margin: 0 auto 10px;
   }
 }
 .visa {
-  width: 100px;
-  height: 31px;
+  //width: 100px;
+  //height: 31px;
   float: left;
   margin-left: 25px;
   margin-right: 25px;
-  background: url('../img/logotypes/visa.png') no-repeat;
-  background-size: cover;
+  //background: url('../img/logotypes/visa.png') no-repeat;
+  //background-size: cover;
+
+  height: 41px;
+  background-size: contain;
+
+  background: url('../img/logotypes2/visa.png') no-repeat;
+  width: 100px;
   @include phone-md {
     float: none;
     margin: 0 auto 10px;
   }
 }
 .alpha {
-  width: 60px;
-  height: 94px;
+  //width: 60px;
+  //height: 94px;
   float: left;
   margin-left: 25px;
   margin-right: 35px;
-  background: url('../img/logotypes/a.png') no-repeat;
+  //background: url('../img/logotypes/a.png') no-repeat;
+
+  height: 45px;
+  background-size: contain;
+  background: url('../img/logotypes2/a.png') no-repeat;
+  width: 100px;
   @include phone-md {
     float: none;
     margin: 0 auto 10px;
   }
 }
 .mastercard {
-  width: 100px;
-  height: 61px;
+  //width: 100px;
+  //height: 61px;
   float: left;
-  background: url('../img/logotypes/mastercard.png') no-repeat;
-  background-size: cover;
+  //background: url('../img/logotypes/mastercard.png') no-repeat;
+  //background-size: cover;
+
+  height: 46px;
+  background-size: contain;
+
+  background: url('../img/logotypes2/mastercard.png') no-repeat;
+  width: 100px;
   @include phone-md {
     float: none;
     margin: 0 auto 10px;
   }
 }
 .psb {
-  width: 71px;
-  height: 71px;
+  //width: 71px;
+  //height: 71px;
   float: left;
   margin-left: 45px;
   margin-right: 50px;
-  background: url('../img/logotypes/psb.png') no-repeat;
+  //background: url('../img/logotypes/psb.png') no-repeat;
+
+  height: 46px;
+  background-size: contain;
+
+  background: url('../img/logotypes2/psb.png') no-repeat;
+  width: 100px;
   @include phone-md {
     float: none;
     margin: 0 auto 10px;
   }
 }
 .sber {
-  width: 96px;
-  height: 91px;
+  //width: 96px;
+  //height: 91px;
   float: left;
   margin-right: 20px;
-  background: url('../img/logotypes/sber.png') no-repeat;
+  //background: url('../img/logotypes/sber.png') no-repeat;
+
+  height: 46px;
+  background-size: contain;
+
+  background: url('../img/logotypes2/sber.png') no-repeat;
+  width: 100px;
   @include phone-md {
     float: none;
     margin: 0 auto 10px;
   }
 }
 .yandex {
-  width: 100px;
-  height: 39px;
+  //width: 100px;
+  //height: 39px;
   float: left;
   margin-right: 60px;
-  background: url('../img/logotypes/yandex.png') no-repeat;
+  //background: url('../img/logotypes/yandex.png') no-repeat;
   background-size: cover;
+
+  height: 46px;
+
+  background: url('../img/logotypes2/yandex.png') no-repeat;
+  width: 100px;
   @include phone-md {
     float: none;
     margin: 0 auto 10px;
   }
 }
 .kiwi {
-  width: 75px;
-  height: 79px;
+  //width: 75px;
+  //height: 79px;
   float: left;
-  background: url('../img/logotypes/kiwi.png') no-repeat;
+  //background: url('../img/logotypes/kiwi.png') no-repeat;
+
+  height: 46px;
+  background-size: contain;
+
+  background: url('../img/logotypes2/kiwi.png') no-repeat;
+  width: 100px;
   @include phone-md {
     float: none;
     margin: 0 auto 10px;
@@ -504,10 +547,15 @@ div.speech:after {
 }
 .webmoney {
   width: 100px;
-  height: 21px;
+  //height: 21px;
   float: left;
-  background: url('../img/logotypes/web.png') no-repeat;
-  background-size: cover;
+  //background: url('../img/logotypes/web.png') no-repeat;
+  //background-size: cover;
+
+  height: 46px;
+  background-size: contain;
+
+  background: url('../img/logotypes2/web.png') no-repeat;
   @include phone-md {
     float: none;
     margin: 0 auto 10px;
@@ -516,11 +564,19 @@ div.speech:after {
 }
 .logos-block {
   list-style: none;
-  width: 105px;
+  //width: 105px;
   margin: 0 auto;
+  padding-left: 35px;
+  @include phone-md {
+    padding-left: 10px;
+  }
     li {
+      float: left;
+      @include phone-md {
+        float: none;
+      }
       div {
-        width: 100px;
+        //width: 100px;
         margin: 10px auto 10px;
         background-position: center;
       }
