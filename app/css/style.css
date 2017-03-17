@@ -725,6 +725,9 @@ div.speech-blue:after {
   font-weight: bold;
   text-decoration: underline;
   color: #133665; }
+  @media (max-width: 456px) {
+    .show-all-variants {
+      font-size: 15px; } }
   @media (max-width: 376px) {
     .show-all-variants {
       font-size: 13px; } }
@@ -733,13 +736,12 @@ div.speech-blue:after {
       font-size: 15px; } }
 
 .price-per-day {
-  font-size: 3em;
   color: #00398B; }
   @media (max-width: 571px) {
     .price-per-day {
       margin-top: 20px;
       margin-left: 19px;
-      font-size: 31px;
+      font-size: 27px;
       font-weight: 900; } }
   @media (max-width: 456px) {
     .price-per-day {
@@ -1269,6 +1271,7 @@ input[type="radio"]:checked + .label-sad {
           border-bottom-right-radius: 0; }
 
 .wrapper-owner {
+  height: 160px;
   margin-top: -27px;
   margin-left: -4px;
   margin-right: -4px;
@@ -1276,6 +1279,9 @@ input[type="radio"]:checked + .label-sad {
   -webkit-border-radius: 8px 8px 0 0;
           border-radius: 8px 8px 0 0;
   background-color: #ededed; }
+  @media (max-width: 456px) {
+    .wrapper-owner {
+      height: 200px; } }
 
 /* ------------- СТИЛИ СТРАНИЦЫ FLAT (КОНЕЦ) ------------- */
 /* ----------------- СТИЛИ ДЛЯ СТРАНИЦЫ CITY (НАЧАЛО) ----------------- */
@@ -2010,7 +2016,7 @@ li.slick-active {
 
 .ctrl__counter-num {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;

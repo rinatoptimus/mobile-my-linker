@@ -196,6 +196,9 @@ div.speech-blue:after {
   font-weight: bold;
   text-decoration: underline;
   color: $main-light;
+  @include phone-md {
+    font-size: 15px;
+  }
   @include phone {
     font-size: 13px;
   }
@@ -204,12 +207,11 @@ div.speech-blue:after {
   }
 }
 .price-per-day {
-  font-size: 3em;
   color: $main;
   @include phone-lg {
     margin-top: 20px;
     margin-left: 19px;
-    font-size: 31px;
+    font-size: 27px;
     font-weight: 900;
   }
   @include phone-md {
@@ -788,11 +790,15 @@ input[type="radio"]:checked + .label-sad {
 }
 
 .wrapper-owner {
+  height: 160px;
   margin-top: -27px;
   margin-left: -4px;
   margin-right: -4px;
   padding: 20px 8px 10px;
   border-radius: 8px 8px 0 0;
   background-color: $bg-warranty;
+  @include phone-md {
+    height: 200px;
+  }
 }
 /* ------------- СТИЛИ СТРАНИЦЫ FLAT (КОНЕЦ) ------------- */
